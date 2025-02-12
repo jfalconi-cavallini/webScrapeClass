@@ -3,21 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Prices</title>
+    <title>Web Scraping Challenge</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        h1 { color: #333; }
-        .crypto { font-size: 20px; margin: 10px 0; }
-        .hidden { display: none; }
+        table { width: 60%; margin: auto; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        th { background-color: #f4f4f4; }
+        .hidden { display: none; } /* Hidden elements */
     </style>
+    <script>
+        // JavaScript-generated content
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("dynamic-price").innerText = "$38,500";
+        });
+    </script>
 </head>
 <body>
-    <h1>Live Crypto Prices</h1>
-    <p class="crypto">Bitcoin: <span class="price">$96,000</span></p>
-    <p class="crypto">Ethereum: <span class="price">$2,700</span></p>
-    <p class="crypto">Dogecoin: <span class="price">$0.25</span></p>
-    
-    <!-- Hidden Message -->
-    <p class="hidden">TOP SECRET: Buy more Dogecoin before the market pumps!</p>
+    <h1>🔍 Web Scraping Challenge</h1>
+
+    <h2>Challenge 1: Scrape the Crypto Table</h2>
+    <table>
+        <tr>
+            <th>Coin</th>
+            <th>Price</th>
+            <th>24h Change</th>
+        </tr>
+        <tr>
+            <td>Bitcoin</td>
+            <td>$45,000</td>
+            <td>+2.3%</td>
+        </tr>
+        <tr>
+            <td>Ethereum</td>
+            <td id="dynamic-price">Loading...</td>
+            <td>-1.1%</td>
+        </tr>
+        <tr>
+            <td>Dogecoin</td>
+            <td>$0.25</td>
+            <td>+5.4%</td>
+        </tr>
+    </table>
+
+    <h2>Challenge 2: Find the Hidden Message</h2>
+    <p class="hidden">TOP SECRET: The password is "h4x0r_master"</p>
+
+    <h2>Challenge 3: Find the Secret API</h2>
+    <p>Data can be found at: <span class="hidden">/api/hidden-data</span></p>
+
+    <h2>Challenge 4: Analyze the Fake Login Form</h2>
+    <form action="fake-login" method="POST">
+        <input type="text" placeholder="Username" name="username"><br><br>
+        <input type="password" placeholder="Password" name="password"><br><br>
+        <button type="submit">Login</button>
+    </form>
+
 </body>
 </html>
